@@ -1,7 +1,7 @@
 {
   "name": "get-fn-name",
   "version": "0.0.0",
-  "description": "Get function name with strictness and correctness in mind. Also works for arrow functions and getting correct name of bounded functions.",
+  "description": "Get function name with strictness and correctness in mind. Also works for arrow functions and getting correct name of bounded functions. Powered by [fn-name][].",
   "repository": "tunnckoCore/get-fn-name",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
   "precommit.silent": true,
@@ -46,8 +46,15 @@
         "global-prefix",
         "parse-function",
         "get-comments",
-        "bind-context"
+        "bind-context",
+        "fn-name"
       ]
+    },
+    "reflinks": [
+      "fn-name"
+    ],
+    "lint": {
+      "reflinks": true
     }
   }
 }

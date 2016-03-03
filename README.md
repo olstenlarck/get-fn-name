@@ -1,6 +1,6 @@
 # [get-fn-name][author-www-url] [![npmjs.com][npmjs-img]][npmjs-url] [![The MIT License][license-img]][license-url] 
 
-> Get function name with strictness and correctness in mind. Also works for arrow functions and getting correct name of bounded functions.
+> Get function name with strictness and correctness in mind. Also works for arrow functions and getting correct name of bounded functions. Powered by [fn-name][].
 
 [![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
 
@@ -22,25 +22,26 @@ const getFnName = require('get-fn-name')
 **Params**
 
 * `val` **{Function}**: Regular or arrow (es2015/es6, also know as `fat arrow`) function.    
-* `returns` **{String}**: The name of function or `'anonymous'` otherwise.  
+* `returns` **{String|null}**: The name of function or `null` otherwise.  
 
 **Example**
 
 ```js
 var name = require('get-fn-name')
 
-console.log(name(function () { return 1 })) // => 'anonymous'
+console.log(name(function () { return 1 })) // => null
 console.log(name(function named () { return 2 })) // => 'named'
 
 // arrows
-console.log(name(() => 3)) // => 'anonymous'
-console.log(name(() => { return 4 })) // => 'anonymous'
-console.log(name((a, b, c) => a + b + c)) // => 'anonymous'
-console.log(name((a, b) => { return a + b })) // => 'anonymous'
+console.log(name(() => 3)) // => null
+console.log(name(() => { return 4 })) // => null
+console.log(name((a, b, c) => a + b + c)) // => null
+console.log(name((a, b) => { return a + b })) // => null
 ```
 
 ## Related
 * [bind-context](https://www.npmjs.com/package/bind-context): Bind context to a function and preserves her name. Can be… [more](https://www.npmjs.com/package/bind-context) | [homepage](https://github.com/tunnckocore/bind-context)
+* [fn-name](https://www.npmjs.com/package/fn-name): Get the name of a named function | [homepage](https://github.com/sindresorhus/fn-name)
 * [get-comments](https://www.npmjs.com/package/get-comments): Extract javascript comments on per character basis. Comment object compatible with… [more](https://www.npmjs.com/package/get-comments) | [homepage](https://github.com/tunnckocore/get-comments)
 * [get-installed-path](https://www.npmjs.com/package/get-installed-path): Get the installation path of the given package if it is… [more](https://www.npmjs.com/package/get-installed-path) | [homepage](https://github.com/tunnckoCore/get-installed-path)
 * [global-modules](https://www.npmjs.com/package/global-modules): The directory used by npm for globally installed npm modules. | [homepage](https://github.com/jonschlinkert/global-modules)

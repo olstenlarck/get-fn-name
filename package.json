@@ -1,6 +1,6 @@
 {
   "name": "get-fn-name",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Get function name with strictness and correctness in mind. Also works for arrow functions and getting correct name of bounded functions. Powered by [fn-name][].",
   "repository": "tunnckoCore/get-fn-name",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",

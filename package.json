@@ -1,0 +1,53 @@
+{
+  "name": "get-fn-name",
+  "version": "0.0.0",
+  "description": "Get function name with strictness and correctness in mind. Also works for arrow functions and getting correct name of bounded functions.",
+  "repository": "tunnckoCore/get-fn-name",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "precommit.silent": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {
+    "fn-name": "^2.0.1"
+  },
+  "devDependencies": {
+    "assertit": "^0.1.0",
+    "pre-commit": "*"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "fn",
+    "fn-name",
+    "fns",
+    "func",
+    "function",
+    "function-name",
+    "get",
+    "get-function-name",
+    "get-fn-name",
+    "name"
+  ],
+  "verb": {
+    "run": false,
+    "toc": false,
+    "layout": "empty",
+    "tasks": [
+      "readme"
+    ],
+    "related": {
+      "list": [
+        "get-installed-path",
+        "global-modules",
+        "global-prefix",
+        "parse-function",
+        "get-comments",
+        "bind-context"
+      ]
+    }
+  }
+}

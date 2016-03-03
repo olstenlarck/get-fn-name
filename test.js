@@ -22,16 +22,16 @@ test('should throw TypeError if `val` not a function', function (done) {
 })
 
 test('should get function name of regular functions', function (done) {
-  test.strictEqual(name(/* istanbul ignore next */function () { return 1 }), 'anonymous')
+  test.strictEqual(name(/* istanbul ignore next */function () { return 1 }), null)
   test.strictEqual(name(/* istanbul ignore next */function named () { return 2 }), 'named')
   done()
 })
 
 test('should get function name of arrow functions', function (done) {
-  test.strictEqual(name(/* istanbul ignore next */() => 111), 'anonymous')
-  test.strictEqual(name(/* istanbul ignore next */() => { return 222 }), 'anonymous')
-  test.strictEqual(name(/* istanbul ignore next */(a, b, c) => a + b + c), 'anonymous')
-  test.strictEqual(name(/* istanbul ignore next */(a, b) => { return a + b }), 'anonymous')
+  test.strictEqual(name(/* istanbul ignore next */() => 111), null)
+  test.strictEqual(name(/* istanbul ignore next */() => { return 222 }), null)
+  test.strictEqual(name(/* istanbul ignore next */(a, b, c) => a + b + c), null)
+  test.strictEqual(name(/* istanbul ignore next */(a, b) => { return a + b }), null)
   done()
 })
 
